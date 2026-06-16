@@ -1,0 +1,73 @@
+:root {
+  --fb-blue: #1877f2;
+  --fb-blue-hover: #166fe5;
+  --fb-blue-dark: #0a5dc2;
+  --fb-blue-light: #e7f3ff;
+  --fb-blue-bg: #f0f2f5;
+  --fb-text: #1c1e21;
+  --fb-text-secondary: #65676b;
+  --fb-white: #ffffff;
+  --fb-shadow: 0 2px 12px rgba(24, 119, 242, 0.12);
+  --fb-radius: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background: var(--fb-blue-bg);
+  color: var(--fb-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Element Plus Facebook theme overrides */
+:root {
+  --el-color-primary: #1877f2;
+  --el-color-primary-light-3: #4d94f5;
+  --el-color-primary-light-5: #7ab0f7;
+  --el-color-primary-light-7: #a8cbf9;
+  --el-color-primary-light-8: #c0d9fb;
+  --el-color-primary-light-9: #e7f3ff;
+  --el-color-primary-dark-2: #166fe5;
+}
+
+.el-button--primary {
+  --el-button-bg-color: #1877f2;
+  --el-button-border-color: #1877f2;
+  --el-button-hover-bg-color: #166fe5;
+  --el-button-hover-border-color: #166fe5;
+}
+
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--fb-text);
+  margin-bottom: 20px;
+}
+
+.card {
+  background: var(--fb-white);
+  border-radius: var(--fb-radius);
+  box-shadow: var(--fb-shadow);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(24, 119, 242, 0.18);
+}
